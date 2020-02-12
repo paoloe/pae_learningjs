@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!-- Source of this first lesson is W3Schools! -->
+        
+        <h1>Learning JavaScript</h1>
+        
+        <h2>Lesson Two: Changing HTML Content</h2>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JS!'";>Click
+        me to change text.</button>
+
+        <p id="demo">Old Text</p>
+
+        <p>What have you learnt?</p>
+
+        <ul>
+            <li>".getElementById("")" looks for an ID.</li>
+        </ul>
+
+        <h3>Using JS to change HTML attribute values</h3>
+
+        <button onclick="document.getElementById('myImg').src='/images/bulbon.jpeg'">Turn light on!</button>
+
+        <img id='myImg' src="/images/bulboff.jpg" style="width:100px">
+
+        <button onclick="document.getElementById('myImg').src='/images/bulboff.jpg'">Turn light off!</button>
+
+        <h3>Using JS to change HTML styles</h3>
+
+        <p id="changeStyle">Original Text!</p>
+
+        <button onclick="document.getElementById('changeStyle').style.fontSize='30px'">Change text!</button>
+
+        <h3>Using JS to hide & show HTML Elements</h3>
+
+        <p id="hideDemo">Hide Demo!</p>
+
+        <button onclick="document.getElementById('hideDemo').style.display='none'">Hide Demo</button>
+        <button onclick="document.getElementById('hideDemo').style.display='block'">Show</button>
+
+        <p>Go back to <a href="/index.html">Home!</a></p>
+    </body>
+</html>
