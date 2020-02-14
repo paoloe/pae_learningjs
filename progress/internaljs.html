@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /* JavaScript can be written in this area,
+            the script tag to then be called within the
+            body of the HTML*/
+
+            // example 1 : changing the text of a particular ID!
+            function sampleFunction(){
+                document.getElementById("demo").innerHTML = "JS allows for web application development, and the ability to make dynamic and interactive web pages!";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Learning JavaScript</h1>
+        <h2>Lesson Three: Internal JavaScript</h2>
+
+        <p id="demo">Why JavaScript?</p>
+        <button type="button" onclick="sampleFunction()">Click here to find out!</button>
+        
+        <!-- example 2 scripts in the body of the HTML! This exmaple again changes the text of a specified id! -->
+        <script>
+            function sample2(){
+                document.getElementById("demo2").innerHTML = "";
+            }
+        </script>
+
+        <p id="demo2">Example 2: Internal JavaScript.</p>
+        <button type="button" onclick="sample2()">Click here to clear the text above.</button>
+
+        <p>Go back to <a href="/index.html">Home!</a></p>
+    </body>
+</html>
