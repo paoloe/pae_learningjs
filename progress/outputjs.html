@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <title>Leaning JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <head>
+        <script src="/js/myscript1.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar -->
+        <ul class="a">
+            <li class="a"><a href="/index.html">Home</a></li>
+        </ul>
+
+        <!-- !PAGE CONTENT! -->
+        <div id="header">
+            <h1>Learning JavaScript</h1>
+        <!-- End page content -->
+        </div>
+
+        <div id="blog">
+            <div class="content">
+                <h2>Lesson Five: JavaScript Outputs</h2>
+
+                 <!-- example 1: using innerHTML to show content -->
+                <p id="plusplus">Mathematical Operations: 5 + 6 = ?</p>
+                <button type="button" onclick="fiveplussix()">Click Here for Answer!</button>
+
+                <!-- example 2: using document.write to show content -->
+                <p>The button below is the example of using "document.write". Please note that this will change the 
+                    whole content of this page, once you click it, refresh the page to return to original state. Once you 
+                    click the button it will return the value of 5 + 6.
+                </p>
+                <button type="button" onclick="l5docwrite()">Click Here</button>
+
+                <!-- example 3: using window.alert to return content as a message box -->
+                <p>The button below is an exmaple of using "window.alert" to have a message box appear on the screen to 
+                    display text.
+                </p>
+                <button type="button" onclick="l5windowalert()">Click Here</button>
+            
+                 <!-- example 4: using the console log to display messages this is an important 
+                    example as you will be using the log in the future to debug applications. -->
+                 <p>The button below will display a message to the console log of the application. This is an improtant 
+                     example as this is a common tool used for debugging.
+                 </p>
+
+                 <button type="button" onclick="l5consolelog()">Click Here</button>
+
+                 <h2>JavaScript Statements / Assignment Operators</h2>
+
+                 <!-- exmaple 5: using variables -->
+                 <p>The button below, calculates 5 + 6 but it does this by declaring three variables, x, y and z.
+                     where x = 5 and y = 6 and z is the answer. Once you click the button the z (which is the calculated value)
+                     gets displayed in the console.
+                 </p>
+
+                 <p>Additionally, the button when clicked will display the calculation of "a += 5" this simply means 
+                     "a = a + 5". In this case a is declared as 10 therefor the output will be 15.
+                 </p>
+                 <button type="button" onclick="l5vars()">Click Here</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
