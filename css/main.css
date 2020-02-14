@@ -1,0 +1,95 @@
+#header {  
+    //height:200px;
+    //width:30%;
+    text-align: center;
+    //align-items: center;
+    //margin-left: 25%;
+    padding:30px 16px;
+}
+
+ul.a {
+    list-style-type: none;
+    margin: auto;
+    padding:10;
+    padding-top:0px;
+    overflow: hidden;
+    background-color: #333;
+    //position:fixed;
+    width: auto;
+    opacity: 95%;
+}
+
+li.a {
+  float: left;
+}
+
+li.a a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+li.a a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+#blog{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding:10px;
+}
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding:15px;
+}
+
+.column {
+  float: left;
+  width: 48.5%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  /* background: #eee; */
+}
+
+/*src:https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217*/
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 90%;
+    margin:1em;
+    padding: 20px;
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: fixed;*/
+}
+
+/*src:https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217*/
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+/*src:https://www.tipsandtricks-hq.com/simple-table-of-contents-toc-using-pure-html-and-css-code-9217*/
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
