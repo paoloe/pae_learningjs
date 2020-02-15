@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <title>Leaning JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <head>
+        <script src="/js/myscript1.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar -->
+        <ul class="a">
+            <li class="a"><a href="/index.html">Home</a></li>
+        </ul>
+
+        <!-- Title -->
+        <div id="header">
+            <h1>Learning JavaScript</h1>
+
+        <!-- Page Content -->
+        </div>
+        
+        <div id="blog">
+            <!-- Add content within this div -->
+            <div class="content">
+                <h2>Lesson 8: JavaScript Strings and String Methods</h2>
+                <p>The value below is of the index of the word "the", using the keywork 
+                    "indexOf()" it returns the index of the first occurence.
+                </p>
+
+                <p id="l8demo"></p>
+                <script>
+                    document.getElementById("l8demo").innerHTML = 
+                    l8indexOf();
+                    document.getElementById("l8demo2").innerHTML =
+                    l8lastindexOf();
+                </script>
+
+                <p>The value below is of the index of the last occurence of a given text using
+                    the keyword "lastIndexOf()".
+                </p>
+                <p id="l8demo2"></p>
+                <script>
+                    document.getElementById("l8demo2").innerHTML =
+                    l8lastindexOf();
+                </script>
+            </div>
+        </div>
+
+    </body>
+</html>
