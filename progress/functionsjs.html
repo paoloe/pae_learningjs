@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Leaning JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <head>
+        <script src="/js/myscript1.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar -->
+        <ul class="a">
+            <li class="a"><a href="/index.html">Home</a></li>
+        </ul>
+
+        <!-- Title -->
+        <div id="header">
+            <h1>Learning JavaScript</h1>
+
+        <!-- Page Content -->
+        </div>
+        
+        <div id="blog">
+            <!-- Add content within this div -->
+            <div class="content">
+                <h2>Lesson 6: JavaScript Functions</h2>
+                <p>Click below to see a calculation of a function that takes in parameters!</p>
+                <p>4 * 3 =</p>
+                <p id="multip"></p>
+                <button type="button" onclick="l6myFunc()">Click Here</button>
+
+                <!-- Below is the code above but I'm altering it to see how I can add parameter
+                    here instead of in the script file -->
+                <p>Below is me playing around with the example above, I combined both using
+                    innerHTML to change text and called the function from the external script
+                    and input my own parameters! (it's just 1 * 2)
+                </p>
+                <p id="multip2"></p>
+                <button type="button" onclick="document.getElementById('multip2').innerHTML
+                = l6params(1, 2)">Click Here</button>
+
+                <!-- How can I stop using buttons to display code? -->
+                <p>Below is auto run code, I didn't want the code to be called before it runs.
+                (it is 5 * 3 = )</p>
+                <p id="autoGen"></p>
+                <script>document.getElementById("autoGen").innerHTML = l6params(5, 3);</script>
+
+                <!-- Assigning a function as a value to a variable -->
+                <p>The value below is a function assigned as a value to a variable.
+                    (it is 999 * 999 = )
+                </p>
+                <p id="funcVal"></p>
+                <script>document.getElementById("funcVal").innerHTML = l6funcVal();</script>
+            </div>
+        </div>
+
+    </body>
+</html>
