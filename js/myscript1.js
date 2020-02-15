@@ -110,3 +110,22 @@ function l7strings(input){
     var txtLen = input.length;
     return txtLen;
 }
+
+/* lesson 8: using indexOf to find the index of first occurence of a 
+    given string */
+function l8indexOf(){
+    // sample input string
+    var str = "This is the sample text with the word the with multiple occurences!"
+    // find the index of first occurence of "the"
+    var pos = str.indexOf("the");
+    return pos;
+}
+
+// lesson 8: similar to above but using lastIndexOf
+function l8lastindexOf(){
+    // sample input string
+    var str = "This is the sample text with the word the with multiple occurences!"
+    // find the last occurence index of "is"
+    var pos = str.lastIndexOf("is");
+    return pos;
+}
