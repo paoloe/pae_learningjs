@@ -52,7 +52,28 @@ function l5vobs(){
     var lastName = "Espiritu";
     // x is an object and holds two vals
     var x = {
-        firstName = "John",
-        lastName = "Doe"
+        /* assigning a value to the var note that it is a 
+        colon to assign a value not = because this is wrong! */
+        firstName: "John",
+        // assigning a value to the var lastName
+        lastName: "Doe"
     };
+}
+
+// lesson 6: using parameters
+function l6params(n1, n2){
+    // return the value of n1 * n2
+    return n1 * n2;
+}
+
+// lesson 6: calling the function l6params to change text
+function l6myFunc(){
+    // change the value of id multip to value of 4 *3
+    document.getElementById("multip").innerHTML = l6params(4, 3);
+}
+
+// lesson 6: Assigning a function as a value to a variable
+function l6funcVal(){
+    var x = l6params(999, 999);
+    return x;
 }
