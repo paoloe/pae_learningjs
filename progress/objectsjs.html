@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>Leaning JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <head>
+        <script src="/js/myscript1.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar -->
+        <ul class="a">
+            <li class="a"><a href="/index.html">Home</a></li>
+        </ul>
+
+        <!-- Title -->
+        <div id="header">
+            <h1>Learning JavaScript</h1>
+
+        <!-- Page Content -->
+        </div>
+        
+        <div id="blog">
+            <!-- Add content within this div -->
+            <div class="content">
+                <h2>Lesson 7: JavaScript Objects</h2>
+                <!-- Retrieving a collection of data from an object method -->
+                <p>The information below is returning a collection of variables of a single object
+                    using a method declared within that object to return all the data.
+                </p>
+                <p id="objDemo"></p>
+                <script>document.getElementById("objDemo").innerHTML = l7obj()</script>
+
+                <h2>JavaScript Strings</h2>
+                <!-- <p id="txt">The below is the length of this paragraph, using a function
+                    that takes in a parameter. The paramater being this paragraph. 
+                </p> -->
+                <p id="txt">The below is the length of this paragraph, using an internal method
+                    that counts a given element. The element being this paragraph.</p>
+                <p id="txtDemo"></p>
+                <script>
+                    // using an internal method to count the characters of above para
+                document.getElementById("txtDemo").innerHTML = "Character Count of Above = " + 
+                document.getElementById("txt").innerHTML.length;
+                </script>
+            </div>
+        </div>
+
+    </body>
+</html>

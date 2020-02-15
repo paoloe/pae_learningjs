@@ -77,3 +77,36 @@ function l6funcVal(){
     var x = l6params(999, 999);
     return x;
 }
+
+// leeson 7: declaring and assigning variables as objects
+function l7obj(){
+    var x = {
+        // declaring and assigning value
+        type:"Seat",
+        // declaring and assigning value
+        model:"Mii",
+        // declaring and assigning value
+        color:"White",
+        // declaring a method to this object to return all details
+        fullDeets(){
+            return "Brand = " + this.type + ", Model = " + this.model + 
+            ", Colour = " + this.color;
+        }
+    };
+
+    // retrieving the name of x
+    var brandOfX = x.type;
+    // retrieving the model of x
+    var modelOfX = x.model;
+    // retrieving the color of x
+    var colorOfX = x.color;
+
+    // returning the value x and calling its method!
+    return x.fullDeets();
+}
+
+// lesson 7: length of a string parameter
+function l7strings(input){
+    var txtLen = input.length;
+    return txtLen;
+}
