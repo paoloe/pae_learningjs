@@ -129,3 +129,18 @@ function l8lastindexOf(){
     var pos = str.lastIndexOf("is");
     return pos;
 }
+
+// lesson 9: converting a number to a string
+function l9toString(){
+    // sample int input using ES6 syntax
+    let x = 123;
+
+    // convert x to string using the method
+    console.log(x.toString()),
+    // prints 123 from literal 123
+    console.log((123).toString()),
+    // prints the string value of 100 + 123
+    console.log((100 + 23).toString())
+
+    return "123.toString() = " + x.toString();
+}
