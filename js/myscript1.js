@@ -136,11 +136,19 @@ function l9toString(){
     let x = 123;
 
     // convert x to string using the method
-    console.log(x.toString()),
+    console.log(x.toString());
     // prints 123 from literal 123
-    console.log((123).toString()),
+    console.log((123).toString());
     // prints the string value of 100 + 123
-    console.log((100 + 23).toString())
+    console.log((100 + 23).toString());
 
     return "123.toString() = " + x.toString();
+}
+
+// lesson 10: arrays the basics
+function l10Array(){
+    // declaration of the array
+    var boxers = ["AJ", "Tyson Fury", "Deontay"];
+
+    return boxers[0];
 }
